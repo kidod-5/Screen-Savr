@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Card from '../components/MovieCard.jsx';
-import { searchMovies, fetchPopularMovies } from '../services/api.js';
+import { searchMovies, fetchPopularMovies, fetchMoreMovies } from '../services/api.js';
 import '../css/Home.css'
 
 function Home(){
@@ -9,6 +9,8 @@ function Home(){
     const [movies, setMovies] = useState([]);
     const [error, setError] = useState(null);
     const [loading, setLoading] = useState(true);
+    const [page, setPage] = useState(2);
+
 
     useEffect(() => {
         const loadMovies = async () => {
@@ -48,6 +50,22 @@ function Home(){
         
     };
 
+    const handleLoadMore = async () => {
+        if (loading) return;
+        setLoading(true);
+
+        try {
+            const moreMovies = await fetchMoreMovies(page);
+            setMovies((prevMovies) => [...prevMovies, ...moreMovies]);
+            setPage((prevPage) => prevPage + 1);
+        } catch (err) {
+            setError("Failed to load more movies. Please try again later.");
+            console.error("Error loading more movies:", err);
+        } finally {
+            setLoading(false);
+        }
+    };
+
     return (
         <div className="home">
             <form onSubmit={handleSearch} className="searchMovie">
@@ -69,6 +87,7 @@ function Home(){
                     movie.title.toLowerCase().startsWith(searchQ) && (<Card movie={movie} key={movie.id}/>
                 ))}
             </div>
+            <button className="loadMoreButton" onClick={handleLoadMore}>Load More</button>
         </div>    
     );
 }

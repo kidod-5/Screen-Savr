@@ -55,9 +55,21 @@
 
 .movieGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
   padding: 1rem;
   width: 100%;
   box-sizing: border-box;
+}
+
+.loadMoreButton {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background-color: #680d11;
+  color: white;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 500;
+  transition: background-color 0.2s;
 }
