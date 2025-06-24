@@ -27,7 +27,7 @@
   color: #e50914;
 }
 
-.emptyFavorite p {
+.emptyFavorites p {
   color: #999;
   font-size: 1.2rem;
   line-height: 1.6;
@@ -46,7 +46,7 @@
   }
 }
 
-.moviesGrid > * {
+.movieGrid > * {
   animation: fadeIn 0.3s ease-out forwards;
 }
 
