@@ -4,7 +4,11 @@ import '../css/Navbar.css'
 function Nav(){
     return <nav className="navBar">
         <div className="navBarBrand">
-            <Link to="/"> Screen Savr</Link>
+            <Link to="/">
+                <div className="navBrandLogo">
+                    <img src="../ss.jpeg" alt="Screen Savr Logo" />
+                </div>
+            </Link>
         </div>
         <div className="navBarLinks">
             <Link to="/" className="navLink"> Home </Link>
