@@ -6,10 +6,10 @@ A simple and responsive React application that allows users to favorite popular 
 
 ## 🌟 Highlights
 
-- 🖼️ **Interactive Movie Cards** – Flip cards to view descriptions and ratings.
-- ⭐ **Favoriting Functionality** – Easily add or remove movies from your favorites.
-- ⚡ **Blazing Fast Setup** – Built with Vite for instant dev server start and lightning-fast builds.
-- 🌐 **Deployed on Cloudflare** – Secure and scalable global hosting.
+-  **Interactive Movie Cards** – Flip cards to view descriptions and ratings.
+-  **Favoriting Functionality** – Easily add or remove movies from your favorites.
+-  **Blazing Fast Setup** – Built with Vite for instant dev server start and lightning-fast builds.
+-  **Deployed on Cloudflare** – Secure and scalable global hosting.
 
 ---
 
@@ -27,7 +27,7 @@ This React app fetches and displays a selection of popular movies. Each movie is
 
 ---
 
-## Reflection 
+## 📓 Reflection 
 
 This project served to solidify my confidence and understanding of fundamental react hooks, react contexts and use of an external api.  I also found the developement process using vite to be faster and more efficient then using create-react-app.  In the future I hope to add featuring allowing users to find local tickets to popular film and to add a section for saving films that have already been watched.
 
