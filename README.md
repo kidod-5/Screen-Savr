@@ -2,6 +2,8 @@
 
 A simple and responsive React application that allows users to favorite popular movies and view key details like descriptions and ratings. Built with [Vite](https://vitejs.dev/) for fast development and deployed with [Cloudflare Pages](https://pages.cloudflare.com/).
 
+deployed at: https://screen-savr.pages.dev/ 
+
 ---
 
 ## 🌟 Highlights
