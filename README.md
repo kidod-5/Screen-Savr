@@ -1,12 +1,46 @@
-# React + Vite
+# 🎬 Screen Savr App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and responsive React application that allows users to favorite popular movies and view key details like descriptions and ratings. Built with [Vite](https://vitejs.dev/) for fast development and deployed with [Cloudflare Pages](https://pages.cloudflare.com/).
 
-Currently, two official plugins are available:
+deployed at: https://screen-savr.pages.dev/ 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🌟 Highlights
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+-  **Interactive Movie Cards** – Flip cards to view descriptions and ratings.
+-  **Favoriting Functionality** – Easily add or remove movies from your favorites.
+-  **Blazing Fast Setup** – Built with Vite for instant dev server start and lightning-fast builds.
+-  **Deployed on Cloudflare** – Secure and scalable global hosting.
+
+---
+
+## 📖 Overview
+
+This React app fetches and displays a selection of popular movies. Each movie is represented as a card showing its title and poster. When clicked, the card flips to reveal a short description and the movie's rating. Users can favorite movies they like, and their favorite list is stored locally in the browser.
+
+### Key Features
+
+- React functional components with hooks
+- Local state management for favorites
+- Card flip animations for interactive UX
+- Responsive layout for desktop and mobile
+- Modular and maintainable file structure
+
+---
+
+## 📓 Reflection 
+
+This project served to solidify my confidence and understanding of fundamental react hooks, react contexts and use of an external api.  I also found the developement process using vite to be faster and more efficient then using create-react-app.  In the future I hope to add featuring allowing users to find local tickets to popular film and to add a section for saving films that have already been watched.
+
+---
+
+## ℹ️ Additional Information
+
+- **Framework**: React + Vite
+- **Deployment**: Cloudflare Pages
+- **API / Data**: https://www.themoviedb.org/ 
+- **Local Development**:
+  ```bash
+  npm install
+  npm run dev
